@@ -1,7 +1,7 @@
 <template>
-    <div class="h-screen min-h[100vh] bg-[#1A1A1A] mx-auto">
-     <div class="flex flex-col items-center justify-center px-4 mt-5 place-content-center">
-       <div class="w-[400px] mb-6 bg-white rounded-md shadow-md my-7 px-4" v-if="generated">
+    <div class="h-screen min-h[100vh] bg-[#1A1A1A]">
+     <div class="flex flex-col items-center justify-center px-4 place-content-center">
+       <div class="mt-20 w-[400px] mb-6 bg-white rounded-md shadow-md my-7 px-4" v-if="generated">
             <div class="flex items-center justify-center mt-5 mb-3">
                <img :src="picture" :alt="picture" class="rounded-full border-3 border-[#08D843]">
             </div>
@@ -10,15 +10,9 @@
          
            <p class="text-xs font-bold">Email: {{  email }}</p>
            <div class="flex items-center justify-between gap-10 text-center place-items-center">
-                 <p class="text-sm font-bold text-gray-500">Gender {{  gender }}</p>  
+                 <p class="text-sm font-bold text-gray-500">Gender:  {{  gender }}</p>  
                  <p class="text-xs text-gray-950">
-
                     Location : {{  state }} - {{  country }}
-
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                   </svg> -->
  
                  </p>
            </div>
